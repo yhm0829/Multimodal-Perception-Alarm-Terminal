@@ -1,0 +1,790 @@
+Table of Contents
+-----------------
+1. checking no clock(0) (HIGH)
+2. checking clock definition(0) (HIGH)
+3. checking dummy node(3) (HIGH)
+4. checking invalid constraint(0) (HIGH)
+5. checking pll/clock buffer clock constraints(2) (HIGH)
+6. checking combinational loops(0) (HIGH)
+7. checking soft fifo timing exception constraints(0) (HIGH)
+8. checking no path constraints(2) (MEDIUM)
+9. checking shadowed/ignored timing exception constraints(6) (MEDIUM)
+10. checking no input delay(22) (MEDIUM)
+11. checking no output delay(26) (MEDIUM)
+12. checking partial input delay(0) (MEDIUM)
+13. checking partial output delay(0) (MEDIUM)
+14. checking abnormal input delay(32) (MEDIUM)
+
+
+1. checking nets with no clock driven. (HIGH)
+---------------------------------------------
+2. checking clock definition problems. (HIGH)
+---------------------------------------------
+2.1 There are 0 leaf clock pins driven by multiple clocks. (HIGH)
+
+
+2.2 There are 0 clocks created on internal clock network. (HIGH)
+
+
+2.3 There are 0 unexpandable clock sets. (HIGH)
+
+
+2.4 There are 0 local clocks. (HIGH)
+
+
+2.5 There are 0 generated clocks that are not connected to their master clocks. (HIGH)
+
+
+3. checking dummy nodes. (HIGH)
+---------------------------------------------
+There are 3 nodes are dangling. (HIGH)
+
+DummyNode in Model: EG_PHY_LSLICE
+	u_video_extensions/u_fire/level_reg[92]_syn_66.d[1]
+	u_video_extensions/u_fire/level_reg[92]_syn_67.d[1]
+	u_video_extensions/u_fire/level_reg[92]_syn_68.d[1]
+	sd_card_bmp_m0/bmp_read_m0/sd_sec_read_addr_b[10]_syn_9.mi[0]
+	u_panel/press_n_syn_6.mi[0]
+	frame_read_write_m0/pixel_fetch/memory_read_syn_4.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/state_reg[7]_syn_54.d[0]
+	sd_card_bmp_m0/bmp_read_m0/state_reg[7]_syn_52.d[0]
+	sd_card_bmp_m0/bmp_read_m0/scan_target_reached_latched_n_syn_18.d[1]
+	sd_card_bmp_m0/sd_card_top_m0/sd_card_sec_read_write_m0/sd_init_done_reg_syn_32.d[1]
+	sd_card_bmp_m0/sd_card_top_m0/sd_card_sec_read_write_m0/sd_init_done_reg_syn_33.d[1]
+	sd_card_bmp_m0/bmp_read_m0/state_reg[7]_syn_54.c[0]
+	sd_card_bmp_m0/bmp_read_m0/state_reg[7]_syn_52.c[0]
+	sd_card_bmp_m0/bmp_read_m0/scan_target_reached_latched_n_syn_18.c[1]
+	sd_card_bmp_m0/sd_card_top_m0/sd_card_sec_read_write_m0/sd_init_done_reg_syn_32.c[1]
+	sd_card_bmp_m0/sd_card_top_m0/sd_card_sec_read_write_m0/sd_init_done_reg_syn_32.c[0]
+	sd_card_bmp_m0/sd_card_top_m0/sd_card_sec_read_write_m0/sd_init_done_reg_syn_33.c[1]
+	sd_card_bmp_m0/sd_card_top_m0/sd_card_sec_read_write_m0/sd_init_done_reg_syn_33.c[0]
+	sd_card_bmp_m0/sd_card_top_m0/sd_card_sec_read_write_m0/sd_init_done_reg_syn_32.a[1]
+	sd_card_bmp_m0/sd_card_top_m0/sd_card_sec_read_write_m0/sd_init_done_reg_syn_33.a[1]
+	sd_card_bmp_m0/sd_card_top_m0/sd_card_sec_read_write_m0/sd_init_done_reg_syn_32.b[1]
+	sd_card_bmp_m0/sd_card_top_m0/sd_card_sec_read_write_m0/sd_init_done_reg_syn_33.b[1]
+	sd_card_bmp_m0/sd_card_top_m0/sd_card_sec_read_write_m0/sd_init_done_reg_syn_21.mi[0]
+	sd_card_bmp_m0/sd_card_top_m0/sd_card_sec_read_write_m0/sd_init_done_reg_syn_32.mi[0]
+	sd_card_bmp_m0/sd_card_top_m0/sd_card_sec_read_write_m0/sd_init_done_reg_syn_33.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/state_reg[7]_syn_52.b[0]
+	sd_card_bmp_m0/bmp_read_m0/state_reg[7]_syn_54.b[0]
+	sd_card_bmp_m0/bmp_read_m0/scan_target_reached_latched_n_syn_18.b[1]
+	sd_card_bmp_m0/sd_card_top_m0/sd_card_sec_read_write_m0/sd_init_done_reg_syn_32.d[0]
+	sd_card_bmp_m0/sd_card_top_m0/sd_card_sec_read_write_m0/sd_init_done_reg_syn_33.d[0]
+	u_alarm_uart/mux33_syn_3644.mi[0]
+	u_video_extensions/font_id_b[3]_syn_543.d[1]
+	u_video_extensions/font_id_b[3]_syn_541.d[1]
+	u_alarm_uart/status_record_reg[121]_syn_4.d[0]
+	video_delay_m0/de_d_reg[0]_syn_4.d[1]
+	u_alarm_uart/mux33_syn_3744.a[1]
+	u_alarm_uart/mux33_syn_3745.a[1]
+	u_alarm_uart/mux33_syn_3744.b[1]
+	u_alarm_uart/mux33_syn_3745.b[1]
+	u_alarm_uart/mux33_syn_3582.a[0]
+	u_alarm_uart/mux62_syn_82.a[1]
+	u_alarm_uart/status_record_reg[121]_syn_4.c[0]
+	video_delay_m0/de_d_reg[0]_syn_4.c[1]
+	u_alarm_uart/status_record_reg[121]_syn_4.b[0]
+	video_delay_m0/de_d_reg[0]_syn_4.b[1]
+	u_alarm_uart/mux33_syn_3582.d[0]
+	u_alarm_uart/mux62_syn_82.d[1]
+	u_alarm_uart/mux33_syn_3582.c[0]
+	u_alarm_uart/mux62_syn_82.c[1]
+	u_alarm_uart/mux33_syn_3744.d[1]
+	u_alarm_uart/mux33_syn_3745.d[1]
+	u_alarm_uart/mux33_syn_3744.c[1]
+	u_alarm_uart/mux33_syn_3745.c[1]
+	u_alarm_uart/mux33_syn_3744.c[0]
+	u_alarm_uart/mux33_syn_3745.c[0]
+	u_alarm_uart/mux33_syn_3528.mi[0]
+	u_alarm_uart/mux33_syn_3744.d[0]
+	u_alarm_uart/mux33_syn_3745.d[0]
+	u_alarm_uart/mux33_syn_3582.b[0]
+	u_alarm_uart/mux62_syn_82.b[1]
+	u_video_extensions/alarm_time_frame_reg[10]_syn_4.d[1]
+	u_video_extensions/alarm_time_frame_reg[10]_syn_4.c[1]
+	u_video_extensions/u_fire/level_reg[92]_syn_66.b[1]
+	u_video_extensions/u_fire/level_reg[92]_syn_67.b[1]
+	u_video_extensions/u_fire/level_reg[92]_syn_68.b[1]
+	u_video_extensions/font_id_b[3]_syn_543.c[1]
+	u_video_extensions/font_id_b[3]_syn_541.c[1]
+	u_audio_display_source/frame_tick_syn_23.c[1]
+	u_audio_display_source/frame_tick_syn_23.d[1]
+	u_alarm_uart/mux33_syn_3656.mi[0]
+	u_alarm_fusion/flash_recent_n_syn_15.mi[0]
+	u_video_extensions/u_fire/level_reg[92]_syn_66.c[1]
+	u_video_extensions/u_fire/level_reg[92]_syn_67.c[1]
+	u_video_extensions/u_fire/level_reg[92]_syn_68.c[1]
+	u_audio_visualizer/bars_b1[217]_syn_38.a[1]
+	u_audio_visualizer/bars_b1[217]_syn_38.e[1]
+	u_audio_visualizer/bars_b1[217]_syn_38.d[1]
+	u_audio_visualizer/bars_b1[217]_syn_38.c[1]
+	u_audio_visualizer/bars_b1[217]_syn_38.b[1]
+	u_hdmi_1_4b_transmitter_core_wrapper/u0_reset_sync/O_sync_reset_reg_syn_62.mi[0]
+	u_hdmi_1_4b_transmitter_core_wrapper/u0_reset_sync/O_sync_reset_reg_syn_62.mi[1]
+	u_hdmi_1_4b_transmitter_core_wrapper/u0_reset_sync/O_sync_reset_reg_syn_68.mi[0]
+	u_hdmi_1_4b_transmitter_core_wrapper/u0_reset_sync/O_sync_reset_reg_syn_71.mi[0]
+	u_hdmi_1_4b_transmitter_core_wrapper/u0_reset_sync/O_sync_reset_reg_syn_71.mi[1]
+	u_paj7620/u_i2c/clear_count_reg[3]_syn_10.mi[0]
+	u_paj7620/master_reg_b[7]_syn_26.mi[0]
+	u_hdmi_1_4b_transmitter_core_wrapper/u0_reset_sync/O_sync_reset_reg_syn_59.mi[1]
+	u_hdmi_1_4b_transmitter_core_wrapper/u0_reset_sync/O_sync_reset_reg_syn_65.mi[0]
+	u_paj7620/u_i2c/state_reg[3]_syn_26.mi[0]
+	u_paj7620/init_index_reg[1]_syn_4.c[1]
+	u_paj7620/init_index_reg[1]_syn_5.c[0]
+	u_paj7620/init_index_reg[1]_syn_6.c[0]
+	u_paj7620/init_index_reg[1]_syn_7.c[0]
+	u_paj7620/init_index_reg[7]_syn_5.c[1]
+	u_paj7620/init_index_reg[7]_syn_6.c[1]
+	u_paj7620/init_index_reg[1]_syn_8.c[1]
+	u_paj7620/init_index_reg[7]_syn_5.d[1]
+	u_paj7620/init_index_reg[7]_syn_6.d[1]
+	u_paj7620/init_index_reg[1]_syn_5.d[0]
+	u_paj7620/init_index_reg[1]_syn_6.d[0]
+	u_paj7620/init_index_reg[1]_syn_7.d[0]
+	u_paj7620/init_index_reg[1]_syn_4.d[1]
+	u_paj7620/init_index_reg[1]_syn_8.d[1]
+	u_video_extensions/x_pos_reg[0]_syn_69.c[1]
+	u_video_extensions/x_pos_reg[8]_syn_5.c[1]
+	u_video_extensions/x_pos_reg[8]_syn_12.c[1]
+	u_video_extensions/x_pos_reg[8]_syn_7.c[1]
+	u_video_extensions/x_pos_reg[8]_syn_8.c[1]
+	u_video_extensions/x_pos_reg[8]_syn_13.c[1]
+	u_video_extensions/x_pos_reg[8]_syn_10.c[1]
+	u_video_extensions/x_pos_reg[8]_syn_11.c[1]
+	u_video_extensions/x_pos_reg[2]_syn_77.c[1]
+	u_video_extensions/x_pos_reg[2]_syn_78.c[1]
+	u_video_extensions/x_pos_reg[2]_syn_79.c[1]
+	u_video_extensions/x_pos_reg[2]_syn_77.d[1]
+	u_video_extensions/x_pos_reg[2]_syn_78.d[1]
+	u_video_extensions/x_pos_reg[2]_syn_79.d[1]
+	u_video_extensions/x_pos_reg[2]_syn_77.e[1]
+	u_video_extensions/x_pos_reg[2]_syn_78.e[1]
+	u_video_extensions/x_pos_reg[2]_syn_79.e[1]
+	u_video_extensions/diff_up[5]_syn_1275.d[0]
+	u_video_extensions/diff_up[5]_syn_1275.d[1]
+	u_video_extensions/x_pos_reg[2]_syn_77.e[0]
+	u_video_extensions/x_pos_reg[2]_syn_78.e[0]
+	u_video_extensions/x_pos_reg[2]_syn_79.e[0]
+	u_video_extensions/diff_up[5]_syn_1268.c[0]
+	u_video_extensions/diff_up[5]_syn_1270.c[0]
+	u_video_extensions/diff_up[5]_syn_1268.d[1]
+	u_video_extensions/diff_up[5]_syn_1270.d[1]
+	u_video_extensions/diff_up[5]_syn_1268.d[0]
+	u_video_extensions/diff_up[5]_syn_1270.d[0]
+	u_video_extensions/diff_up[5]_syn_1268.e[0]
+	u_video_extensions/diff_up[5]_syn_1270.e[0]
+	u_video_extensions/diff_up[5]_syn_1272.c[0]
+	u_video_extensions/diff_up[5]_syn_1272.d[0]
+	u_video_extensions/diff_up[5]_syn_1272.c[1]
+	u_video_extensions/diff_up[5]_syn_1272.d[1]
+	u_video_extensions/diff_up[5]_syn_1272.e[0]
+	u_video_extensions/diff_up[5]_syn_1272.e[1]
+	u_video_extensions/diff_up[5]_syn_1277.c[1]
+	u_video_extensions/diff_up[5]_syn_1277.c[0]
+	u_video_extensions/diff_up[5]_syn_1277.d[1]
+	u_video_extensions/diff_up[5]_syn_1277.d[0]
+	u_video_extensions/diff_up[5]_syn_1277.e[1]
+	u_video_extensions/diff_up[5]_syn_1277.e[0]
+	u_video_extensions/diff_up[5]_syn_1268.a[1]
+	u_video_extensions/x_pos_reg[1]_syn_79.b[1]
+	u_video_extensions/diff_up[5]_syn_1270.a[1]
+	u_video_extensions/luma_line_n_syn_486.b[1]
+	u_video_extensions/diff_up[5]_syn_1268.b[1]
+	u_video_extensions/x_pos_reg[2]_syn_77.b[0]
+	u_video_extensions/diff_up[5]_syn_1270.b[1]
+	u_video_extensions/x_pos_reg[2]_syn_78.b[0]
+	u_video_extensions/x_pos_reg[2]_syn_79.b[0]
+	u_video_extensions/diff_up[5]_syn_1275.b[1]
+	u_video_extensions/diff_up[5]_syn_1275.b[0]
+	u_video_extensions/x_pos_reg[0]_syn_69.b[0]
+	u_video_extensions/diff_up[5]_syn_1275.c[0]
+	u_video_extensions/diff_up[5]_syn_1275.c[1]
+	u_video_extensions/diff_up[5]_syn_1268.c[1]
+	u_video_extensions/diff_up[5]_syn_1270.c[1]
+	u_video_extensions/x_pos_reg[2]_syn_77.d[0]
+	u_video_extensions/x_pos_reg[2]_syn_78.d[0]
+	u_video_extensions/x_pos_reg[2]_syn_79.d[0]
+	u_video_extensions/luma_line_n_syn_486.b[0]
+	u_video_extensions/x_pos_reg[0]_syn_69.c[0]
+	u_video_extensions/x_pos_reg[1]_syn_79.c[0]
+	u_video_extensions/x_pos_reg[1]_syn_79.c[1]
+	u_video_extensions/luma_line_n_syn_486.c[0]
+	u_video_extensions/luma_line_n_syn_486.c[1]
+	u_video_extensions/diff_up[5]_syn_1268.b[0]
+	u_video_extensions/diff_up[5]_syn_1277.b[1]
+	u_video_extensions/diff_up[5]_syn_1270.b[0]
+	u_video_extensions/x_pos_reg[2]_syn_77.b[1]
+	u_video_extensions/diff_up[5]_syn_1277.b[0]
+	u_video_extensions/diff_up[5]_syn_1272.b[1]
+	u_video_extensions/diff_up[5]_syn_1272.b[0]
+	u_video_extensions/x_pos_reg[2]_syn_79.b[1]
+	u_video_extensions/x_pos_reg[2]_syn_78.b[1]
+	u_video_extensions/diff_up[5]_syn_1268.a[0]
+	u_video_extensions/diff_up[5]_syn_1277.a[1]
+	u_video_extensions/diff_up[5]_syn_1270.a[0]
+	u_video_extensions/x_pos_reg[2]_syn_77.a[1]
+	u_video_extensions/diff_up[5]_syn_1277.a[0]
+	u_video_extensions/diff_up[5]_syn_1272.a[1]
+	u_video_extensions/diff_up[5]_syn_1272.a[0]
+	u_video_extensions/x_pos_reg[2]_syn_79.a[1]
+	u_video_extensions/x_pos_reg[2]_syn_78.a[1]
+	u_video_extensions/u_alarm_glyphs/pixel_n2_syn_1781.e[0]
+	u_video_extensions/font_id_b[3]_syn_527.mi[0]
+	u_video_extensions/luma_line_n_syn_395.mi[0]
+	u_video_extensions/diff_up[5]_syn_888.mi[0]
+	u_video_extensions/diff_up[5]_syn_876.mi[0]
+	u_video_extensions/x_pos_reg[3]_syn_48.mi[1]
+	u_video_extensions/x_pos_reg[0]_syn_65.mi[0]
+	u_video_extensions/x_pos_reg[0]_syn_59.mi[0]
+	u_video_extensions/x_pos_reg[3]_syn_41.mi[1]
+	u_video_extensions/diff_up[5]_syn_878.mi[0]
+	u_video_extensions/luma_line_n_syn_391.mi[0]
+	u_video_extensions/diff_up[5]_syn_912.mi[0]
+	u_video_extensions/diff_up[5]_syn_904.mi[0]
+	u_video_extensions/x_pos_reg[1]_syn_67.mi[0]
+	u_video_extensions/x_pos_reg[2]_syn_63.mi[1]
+	u_video_extensions/x_pos_reg[2]_syn_51.mi[1]
+	u_video_extensions/diff_up[5]_syn_864.mi[0]
+	u_video_extensions/diff_up[5]_syn_858.mi[0]
+	u_video_extensions/diff_up[5]_syn_880.mi[0]
+	u_video_extensions/x_pos_reg[0]_syn_53.mi[0]
+	u_video_extensions/x_pos_reg[2]_syn_54.mi[1]
+	u_video_extensions/diff_up[5]_syn_906.mi[0]
+	u_video_extensions/x_pos_reg[1]_syn_79.mi[0]
+	u_video_extensions/diff_up[5]_syn_916.mi[0]
+	u_video_extensions/x_pos_reg[0]_syn_62.mi[0]
+	u_video_extensions/x_pos_reg[3]_syn_48.mi[0]
+	u_video_extensions/x_pos_reg[1]_syn_67.mi[1]
+	u_video_extensions/diff_up[5]_syn_862.mi[0]
+	u_video_extensions/x_pos_reg[2]_syn_58.mi[0]
+	u_video_extensions/x_pos_reg[2]_syn_51.mi[0]
+	u_video_extensions/diff_up[5]_syn_908.mi[0]
+	u_video_extensions/alarm_icon[0]_syn_389.mi[0]
+	u_video_extensions/x_pos_reg[0]_syn_62.mi[1]
+	u_video_extensions/x_pos_reg[0]_syn_65.mi[1]
+	u_video_extensions/x_pos_reg[0]_syn_59.mi[1]
+	u_video_extensions/diff_up[5]_syn_868.mi[0]
+	u_video_extensions/diff_up[5]_syn_870.mi[0]
+	u_video_extensions/x_pos_reg[0]_syn_53.mi[1]
+	u_video_extensions/font_id[1]_syn_185.mi[0]
+	u_video_extensions/diff_up[5]_syn_900.mi[0]
+	u_video_extensions/x_pos_reg[2]_syn_77.mi[0]
+	u_video_extensions/x_pos_reg[0]_syn_69.mi[1]
+	u_video_extensions/x_pos_reg[2]_syn_78.mi[0]
+	u_video_extensions/x_pos_reg[2]_syn_79.mi[0]
+	u_video_extensions/x_pos_reg[8]_syn_5.d[1]
+	u_video_extensions/x_pos_reg[8]_syn_12.d[1]
+	u_video_extensions/x_pos_reg[8]_syn_7.d[1]
+	u_video_extensions/x_pos_reg[8]_syn_8.d[1]
+	u_video_extensions/x_pos_reg[8]_syn_13.d[1]
+	u_video_extensions/x_pos_reg[8]_syn_10.d[1]
+	u_video_extensions/x_pos_reg[8]_syn_11.d[1]
+	u_video_extensions/u_alarm_glyphs/pixel_n2_syn_1774.d[0]
+	u_video_extensions/u_alarm_glyphs/pixel_n2_syn_1776.d[0]
+	u_video_extensions/u_alarm_glyphs/pixel_n2_syn_1778.d[0]
+	u_video_extensions/u_alarm_glyphs/pixel_n2_syn_1780.d[0]
+	u_video_extensions/u_alarm_glyphs/pixel_n2_syn_1774.c[0]
+	u_video_extensions/u_alarm_glyphs/pixel_n2_syn_1776.c[0]
+	u_video_extensions/u_alarm_glyphs/pixel_n2_syn_1778.c[0]
+	u_video_extensions/u_alarm_glyphs/pixel_n2_syn_1780.c[0]
+	u_video_extensions/x_pos_reg[0]_syn_69.d[0]
+	u_video_extensions/luma_line_n_syn_486.d[1]
+	u_video_extensions/luma_line_n_syn_486.d[0]
+	u_video_extensions/x_pos_reg[0]_syn_69.d[1]
+	u_video_extensions/x_pos_reg[1]_syn_79.d[1]
+	u_video_extensions/x_pos_reg[1]_syn_79.d[0]
+	u_video_extensions/x_pos_reg[2]_syn_78.a[0]
+	u_video_extensions/x_pos_reg[2]_syn_79.a[0]
+	u_video_extensions/x_pos_reg[1]_syn_79.b[0]
+	u_video_extensions/diff_up[5]_syn_1275.a[1]
+	u_video_extensions/diff_up[5]_syn_1275.a[0]
+	u_video_extensions/x_pos_reg[2]_syn_77.a[0]
+	u_video_extensions/x_pos_reg[2]_syn_78.c[0]
+	u_video_extensions/x_pos_reg[2]_syn_79.c[0]
+	u_video_extensions/x_pos_reg[2]_syn_77.c[0]
+	u_video_extensions/u_alarm_glyphs/pixel_n2_syn_1781.d[0]
+	u_video_extensions/u_alarm_glyphs/pixel_n2_syn_1628.d[0]
+	u_video_extensions/u_alarm_glyphs/pixel_n2_syn_1628.c[0]
+	u_video_extensions/u_alarm_glyphs/pixel_n2_syn_1765.c[1]
+	u_video_extensions/u_alarm_glyphs/pixel_n2_syn_1766.c[1]
+	u_video_extensions/u_alarm_glyphs/pixel_n2_syn_1767.c[1]
+	u_video_extensions/u_alarm_glyphs/pixel_n2_syn_1576.d[1]
+	u_video_extensions/u_alarm_glyphs/pixel_n2_syn_1576.c[1]
+	u_video_extensions/u_alarm_glyphs/pixel_n2_syn_1676.d[0]
+	u_video_extensions/u_alarm_glyphs/pixel_n2_syn_1676.b[0]
+	u_video_extensions/u_alarm_glyphs/pixel_n2_syn_1676.c[0]
+	u_video_extensions/u_alarm_glyphs/pixel_n2_syn_1781.c[0]
+	u_video_extensions/u_alarm_glyphs/pixel_n2_syn_1765.d[1]
+	u_video_extensions/u_alarm_glyphs/pixel_n2_syn_1766.d[1]
+	u_video_extensions/u_alarm_glyphs/pixel_n2_syn_1767.d[1]
+	u_video_extensions/u_alarm_glyphs/pixel_n2_syn_1781.a[0]
+	u_video_extensions/u_alarm_glyphs/pixel_n2_syn_1781.b[0]
+	u_video_extensions/u_alarm_glyphs/pixel_n2_syn_1774.a[0]
+	u_video_extensions/u_alarm_glyphs/pixel_n2_syn_1776.a[0]
+	u_video_extensions/u_alarm_glyphs/pixel_n2_syn_1778.a[0]
+	u_video_extensions/u_alarm_glyphs/pixel_n2_syn_1780.a[0]
+	u_video_extensions/u_alarm_glyphs/pixel_n2_syn_1774.b[0]
+	u_video_extensions/u_alarm_glyphs/pixel_n2_syn_1776.b[0]
+	u_video_extensions/u_alarm_glyphs/pixel_n2_syn_1778.b[0]
+	u_video_extensions/u_alarm_glyphs/pixel_n2_syn_1780.b[0]
+	u_video_extensions/u_fire/peak_delta_b1[5]_syn_204.c[1]
+	u_video_extensions/u_fire/peak_delta_b1[5]_syn_158.c[0]
+	u_video_extensions/u_fire/peak_delta_b1[5]_syn_200.c[1]
+	u_video_extensions/u_fire/peak_delta_b1[5]_syn_202.c[1]
+	u_video_extensions/u_fire/peak_delta_b1[5]_syn_208.c[1]
+	u_video_extensions/u_fire/peak_delta_b1[5]_syn_209.b[0]
+	u_video_extensions/u_fire/peak_delta_b1[5]_syn_204.b[1]
+	u_video_extensions/u_fire/peak_delta_b1[5]_syn_158.b[0]
+	u_video_extensions/u_fire/peak_delta_b1[5]_syn_200.b[1]
+	u_video_extensions/u_fire/peak_delta_b1[5]_syn_202.b[1]
+	u_video_extensions/u_fire/peak_delta_b1[5]_syn_208.b[1]
+	u_video_extensions/u_fire/peak_delta_b1[5]_syn_209.e[0]
+	u_video_extensions/u_fire/peak_delta_b1[5]_syn_209.d[0]
+	u_video_extensions/u_fire/peak_delta_b1[5]_syn_158.d[0]
+	u_video_extensions/u_fire/peak_delta_b1[5]_syn_200.d[1]
+	u_video_extensions/u_fire/peak_delta_b1[5]_syn_202.d[1]
+	u_video_extensions/u_fire/peak_delta_b1[5]_syn_204.d[1]
+	u_video_extensions/u_fire/peak_delta_b1[5]_syn_208.d[1]
+	u_video_extensions/u_fire/peak_delta_b1[5]_syn_158.a[0]
+	u_video_extensions/u_fire/peak_delta_b1[5]_syn_200.a[1]
+	u_video_extensions/u_fire/peak_delta_b1[5]_syn_202.a[1]
+	u_video_extensions/u_fire/peak_delta_b1[5]_syn_204.a[1]
+	u_video_extensions/u_fire/peak_delta_b1[5]_syn_208.a[1]
+	u_video_extensions/u_fire/peak_delta_b1[5]_syn_209.a[0]
+	u_video_extensions/u_fire/level_delta_b1[0]_syn_89.d[0]
+	u_video_extensions/u_fire/level_reg[91]_syn_11.d[0]
+	u_video_extensions/u_fire/level_delta_b1[0]_syn_89.b[0]
+	u_video_extensions/u_fire/level_reg[91]_syn_11.b[0]
+	u_video_extensions/u_fire/level_delta_b1[0]_syn_89.c[0]
+	u_video_extensions/u_fire/level_reg[91]_syn_11.c[0]
+	u_video_extensions/u_fire/peak_delta_b1[5]_syn_209.c[0]
+	sd_card_bmp_m0/bmp_read_m0/mux120_syn_304.mi[0]
+	sd_card_bmp_m0/bmp_read_m0/scan_target_reached_latched_n_syn_18.mi[0]
+	u_alarm_uart/mux33_syn_3550.mi[0]
+	u_alarm_uart/mux33_syn_3572.mi[0]
+	u_video_extensions/alarm_time_frame_reg[10]_syn_4.a[1]
+	u_video_extensions/alarm_time_frame_reg[10]_syn_4.b[1]
+
+DummyNode in Model: EG_PHY_MSLICE
+	u_paj7620/sensor_ready_reg_syn_16.mi[0]
+	u_paj7620/mux49_syn_3620.mi[0]
+	frame_read_write_m0/frame_fifo_read_m0/App_rd_addr_r_reg[0]_syn_49.mi[0]
+	sd_card_bmp_m0/load_idx_reg[1]_syn_30.a[0]
+	sd_card_bmp_m0/load_idx_reg[1]_syn_31.a[0]
+	sd_card_bmp_m0/load_idx_reg[1]_syn_30.b[0]
+	sd_card_bmp_m0/load_idx_reg[1]_syn_31.b[0]
+	sd_card_bmp_m0/bmp_read_m0/scan_target_reached_latched_n_syn_25.d[0]
+	sd_card_bmp_m0/bmp_read_m0/scan_target_reached_latched_n_syn_27.d[0]
+	sd_card_bmp_m0/bmp_read_m0/scan_target_reached_latched_n_syn_29.d[0]
+	sd_card_bmp_m0/sd_card_top_m0/sd_card_sec_read_write_m0/sd_init_done_reg_syn_29.b[0]
+	sd_card_bmp_m0/sd_card_top_m0/sd_card_sec_read_write_m0/sd_init_done_reg_syn_30.b[0]
+	sd_card_bmp_m0/sd_card_top_m0/sd_card_sec_read_write_m0/sd_init_done_reg_syn_31.b[0]
+	sd_card_bmp_m0/sd_card_top_m0/sd_card_sec_read_write_m0/sd_init_done_reg_syn_29.d[0]
+	sd_card_bmp_m0/sd_card_top_m0/sd_card_sec_read_write_m0/sd_init_done_reg_syn_30.d[0]
+	sd_card_bmp_m0/sd_card_top_m0/sd_card_sec_read_write_m0/sd_init_done_reg_syn_31.d[0]
+	sd_card_bmp_m0/bmp_read_m0/scan_target_reached_latched_n_syn_25.c[0]
+	sd_card_bmp_m0/bmp_read_m0/scan_target_reached_latched_n_syn_27.c[0]
+	sd_card_bmp_m0/bmp_read_m0/scan_target_reached_latched_n_syn_29.c[0]
+	sd_card_bmp_m0/sd_card_top_m0/sd_card_sec_read_write_m0/sd_init_done_reg_syn_29.c[0]
+	sd_card_bmp_m0/sd_card_top_m0/sd_card_sec_read_write_m0/sd_init_done_reg_syn_30.c[0]
+	sd_card_bmp_m0/sd_card_top_m0/sd_card_sec_read_write_m0/sd_init_done_reg_syn_31.c[0]
+	sd_card_bmp_m0/sd_card_top_m0/sd_card_sec_read_write_m0/sd_init_done_reg_syn_29.c[1]
+	sd_card_bmp_m0/sd_card_top_m0/sd_card_sec_read_write_m0/sd_init_done_reg_syn_30.c[1]
+	sd_card_bmp_m0/sd_card_top_m0/sd_card_sec_read_write_m0/sd_init_done_reg_syn_31.c[1]
+	sd_card_bmp_m0/sd_card_top_m0/sd_card_sec_read_write_m0/sd_init_done_reg_syn_29.d[1]
+	sd_card_bmp_m0/sd_card_top_m0/sd_card_sec_read_write_m0/sd_init_done_reg_syn_30.d[1]
+	sd_card_bmp_m0/sd_card_top_m0/sd_card_sec_read_write_m0/sd_init_done_reg_syn_31.d[1]
+	sd_card_bmp_m0/sd_card_top_m0/sd_card_sec_read_write_m0/sd_init_done_reg_syn_24.mi[0]
+	sd_card_bmp_m0/sd_card_top_m0/sd_card_sec_read_write_m0/sd_init_done_reg_syn_28.mi[1]
+	sd_card_bmp_m0/sd_card_top_m0/sd_card_sec_read_write_m0/sd_init_done_reg_syn_28.mi[0]
+	sd_card_bmp_m0/sd_card_top_m0/sd_card_sec_read_write_m0/sd_init_done_reg_syn_24.mi[1]
+	sd_card_bmp_m0/sd_card_top_m0/sd_card_sec_read_write_m0/sd_init_done_reg_syn_29.mi[0]
+	sd_card_bmp_m0/sd_card_top_m0/sd_card_sec_read_write_m0/sd_init_done_reg_syn_30.mi[0]
+	sd_card_bmp_m0/sd_card_top_m0/sd_card_sec_read_write_m0/sd_init_done_reg_syn_31.mi[0]
+	u_alarm_uart/mux33_syn_3648.mi[0]
+	u_audio_display_source/add96_syn_120.c[0]
+	u_audio_display_source/add96_syn_120.d[0]
+	u_video_extensions/ambient_valid_v_reg_syn_5.mi[0]
+	u_paj7620/u_i2c/after_fall_reg[3]_syn_17.mi[0]
+	video_clk_syn_1031.mi[0]
+	u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_assemble/S_island_packet_req_2d_reg_syn_26.mi[0]
+	u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_assemble/S_island_packet_req_1d_reg_syn_14.mi[1]
+	u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/u_audio_clock_regeneration_packet/O_BCH_block_0_reg[56]_syn_5.d[1]
+	u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/u_audio_clock_regeneration_packet/O_BCH_block_0_reg[56]_syn_6.d[1]
+	u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/u_audio_clock_regeneration_packet/O_BCH_block_0_reg[56]_syn_7.d[1]
+	u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/u_audio_clock_regeneration_packet/O_BCH_block_0_reg[56]_syn_5.c[1]
+	u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/u_audio_clock_regeneration_packet/O_BCH_block_0_reg[56]_syn_6.c[1]
+	u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/u_audio_clock_regeneration_packet/O_BCH_block_0_reg[56]_syn_7.c[1]
+	u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/u_audio_clock_regeneration_packet/O_BCH_block_0_reg[56]_syn_5.b[1]
+	u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/u_audio_clock_regeneration_packet/O_BCH_block_0_reg[56]_syn_6.b[1]
+	u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/u_audio_clock_regeneration_packet/O_BCH_block_0_reg[56]_syn_7.b[1]
+	u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/u_audio_clock_regeneration_packet/O_BCH_block_0_reg[56]_syn_5.mi[0]
+	u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/u_audio_clock_regeneration_packet/O_BCH_block_0_reg[56]_syn_6.mi[0]
+	u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/u_audio_clock_regeneration_packet/O_BCH_block_0_reg[56]_syn_7.mi[0]
+	u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/u_audio_clock_regeneration_packet/O_BCH_block_0_reg[56]_syn_5.mi[1]
+	u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/u_audio_clock_regeneration_packet/O_BCH_block_0_reg[56]_syn_6.mi[1]
+	u_hdmi_1_4b_transmitter_core_wrapper/u_hdmi_tx_controller_wrapper/u_hdmi_island_data_gen/u_audio_clock_regeneration_packet/O_BCH_block_0_reg[56]_syn_7.mi[1]
+	u_paj7620/init_index_reg[3]_syn_5.c[0]
+	u_paj7620/init_index_reg[3]_syn_6.c[0]
+	u_paj7620/init_index_reg[3]_syn_7.c[1]
+	u_paj7620/init_index_reg[3]_syn_8.c[1]
+	u_paj7620/init_index_reg[3]_syn_5.d[0]
+	u_paj7620/init_index_reg[3]_syn_6.d[0]
+	u_paj7620/init_index_reg[3]_syn_7.d[1]
+	u_paj7620/init_index_reg[3]_syn_8.d[1]
+	u_video_extensions/u_alarm_glyphs/pixel_n2_syn_1688.d[1]
+	u_video_extensions/u_alarm_glyphs/pixel_n2_syn_1688.b[1]
+	u_video_extensions/u_alarm_glyphs/pixel_n2_syn_1688.c[1]
+	u_video_extensions/u_alarm_glyphs/pixel_n2_syn_1768.d[1]
+	u_video_extensions/u_alarm_glyphs/pixel_n2_syn_1770.d[1]
+	u_video_extensions/u_alarm_glyphs/pixel_n2_syn_1772.d[1]
+	u_video_extensions/u_alarm_glyphs/pixel_n2_syn_1768.c[1]
+	u_video_extensions/u_alarm_glyphs/pixel_n2_syn_1770.c[1]
+	u_video_extensions/u_alarm_glyphs/pixel_n2_syn_1772.c[1]
+	sd_card_bmp_m0/load_idx_reg[1]_syn_30.c[0]
+	sd_card_bmp_m0/load_idx_reg[1]_syn_31.c[0]
+	sd_card_bmp_m0/load_idx_reg[1]_syn_30.d[0]
+	sd_card_bmp_m0/load_idx_reg[1]_syn_31.d[0]
+	sd_card_bmp_m0/bmp_read_m0/scan_target_reached_latched_n_syn_25.b[0]
+	sd_card_bmp_m0/bmp_read_m0/scan_target_reached_latched_n_syn_27.b[0]
+	sd_card_bmp_m0/bmp_read_m0/scan_target_reached_latched_n_syn_29.b[0]
+	sd_card_bmp_m0/scan_complete_reg_syn_8.mi[0]
+	fft_warm_reg[0]_syn_7.mi[0]
+
+DummyNode in Model: EG_PHY_PAD
+	seg_sel[4]_syn_1.opad
+	seg_sel[3]_syn_1.opad
+	seg_sel[2]_syn_1.opad
+	seg_sel[1]_syn_1.opad
+	seg_sel[0]_syn_1.opad
+	U3/sdram_syn_5.opad
+	U3/sdram_syn_10.opad
+
+4. checking invalid constraints. (HIGH)
+---------------------------------------------
+There are 0 invalid constraints. (HIGH)
+
+
+5. checking PLL/buffer clocks. (HIGH)
+---------------------------------------------
+PLL/buffer inst: sys_pll_m0/pll_inst
+{
+	There are 0 clock pins that have no clock constraints. (HIGH)
+
+
+	There are 0 clocks whose clock frequency do not match the PLL setting. (HIGH)
+
+
+}
+
+PLL/buffer inst: u_pcm_clock/pll_a
+{
+	There are 0 clock pins that have no clock constraints. (HIGH)
+
+
+	There are 0 clocks whose clock frequency do not match the PLL setting. (HIGH)
+
+
+}
+
+PLL/buffer inst: u_pcm_clock/pll_b
+{
+	There are 0 clock pins that have no clock constraints. (HIGH)
+
+
+	There are 0 clocks whose clock frequency do not match the PLL setting. (HIGH)
+
+
+}
+
+PLL/buffer inst: video_pll_m0/pll_inst
+{
+	There are 0 clock pins that have no clock constraints. (HIGH)
+
+
+	There are 0 clocks whose clock frequency do not match the PLL setting. (HIGH)
+
+
+}
+
+6. checking combinational loops. (HIGH)
+---------------------------------------------
+There are 0 combinational loops. (HIGH)
+
+
+7. checking soft fifo set_max_delay constraints. (HIGH)
+---------------------------------------------
+There are 0 max-delay datapath-only paths that are part of the provided async clock paths, whereas the timing between other registers is not relaxed or ignored. (HIGH)
+
+
+8. checking no path constraints. (MEDIUM)
+---------------------------------------------
+There are 2 constraints that have no timing paths. (MEDIUM)
+
+ set_max_delay -datapath_only 7.700 -from [get_clocks clk] -to [get_clocks hdmi_5x_clk]
+ set_false_path -hold 7.700 -from [get_clocks clk] -to [get_clocks hdmi_5x_clk]
+
+9. checking path exception constraints shadowed/ignored by other constraints. (MEDIUM)
+---------------------------------------------
+
+MCP/SMD Summary
+--------------------
+
+		Max Check
+		--------------------
+		     Total    Dominated     Shadowed      Ignored   Constraint
+		       146          145            0            1   set_max_delay -datapath_only 19.700 -from [get_clocks clk] -to [get_clocks video_clk]
+		         0            0            0            0   set_max_delay -datapath_only 7.700 -from [get_clocks clk] -to [get_clocks hdmi_5x_clk]
+		         2            2            0            0   set_max_delay -datapath_only 9.700 -from [get_clocks sd_card_clk] -to [get_clocks video_clk]
+		        11            2            9            0   set_max_delay -datapath_only 7.700 -from [get_clocks ext_mem_clk] -to [get_clocks video_clk]
+		         3            3            0            0   set_max_delay -datapath_only 9.700 -from [get_clocks video_clk] -to [get_clocks sd_card_clk]
+		        10            1            9            0   set_max_delay -datapath_only 7.700 -from [get_clocks video_clk] -to [get_clocks ext_mem_clk]
+		         4            4            0            0   set_max_delay -datapath_only 39.700 -from [get_clocks video_clk] -to [get_clocks pcm_mclk]
+		         4            4            0            0   set_max_delay -datapath_only 39.700 -from [get_clocks pcm_mclk] -to [get_clocks video_clk]
+		        22           22            0            0   set_max_delay -datapath_only 9.700 -from [get_clocks clk] -to [get_clocks sd_card_clk]
+		        19           18            0            1   set_max_delay -datapath_only 7.700 -from [get_clocks clk] -to [get_clocks ext_mem_clk]
+		        12            3            9            0   set_max_delay -datapath_only 7.700 -from [get_clocks sd_card_clk] -to [get_clocks ext_mem_clk]
+		        13            4            9            0   set_max_delay -datapath_only 7.700 -from [get_clocks ext_mem_clk] -to [get_clocks sd_card_clk]
+		         4            4            0            0   set_multicycle_path 2 -setup -to [get_pins -hier -regexp {frame_read_write_m0/read_buf/ram_inst/ramread0.*\.wea}]
+		         1            1            0            0   set_multicycle_path 2 -setup -from [get_pins {U3/sdram.dq[0]}] -to [get_pins {U3/sdram_syn_1.bpad}]
+		         1            1            0            0   set_multicycle_path 2 -setup -from [get_pins {U3/sdram.dq[23]}] -to [get_pins {U3/sdram_syn_18.bpad}]
+		         1            1            0            0   set_multicycle_path 2 -setup -from [get_pins {U3/sdram.dq[22]}] -to [get_pins {U3/sdram_syn_19.bpad}]
+		         1            1            0            0   set_multicycle_path 2 -setup -from [get_pins {U3/sdram.dq[6]}] -to [get_pins {U3/sdram_syn_2.bpad}]
+		         1            1            0            0   set_multicycle_path 2 -setup -from [get_pins {U3/sdram.dq[21]}] -to [get_pins {U3/sdram_syn_20.bpad}]
+		         1            1            0            0   set_multicycle_path 2 -setup -from [get_pins {U3/sdram.dq[20]}] -to [get_pins {U3/sdram_syn_21.bpad}]
+		         1            1            0            0   set_multicycle_path 2 -setup -from [get_pins {U3/sdram.dq[19]}] -to [get_pins {U3/sdram_syn_22.bpad}]
+		         1            1            0            0   set_multicycle_path 2 -setup -from [get_pins {U3/sdram.dq[18]}] -to [get_pins {U3/sdram_syn_23.bpad}]
+		         1            1            0            0   set_multicycle_path 2 -setup -from [get_pins {U3/sdram.dq[17]}] -to [get_pins {U3/sdram_syn_24.bpad}]
+		         1            1            0            0   set_multicycle_path 2 -setup -from [get_pins {U3/sdram.dq[16]}] -to [get_pins {U3/sdram_syn_25.bpad}]
+		         1            1            0            0   set_multicycle_path 2 -setup -from [get_pins {U3/sdram.dq[31]}] -to [get_pins {U3/sdram_syn_26.bpad}]
+		         1            1            0            0   set_multicycle_path 2 -setup -from [get_pins {U3/sdram.dq[30]}] -to [get_pins {U3/sdram_syn_27.bpad}]
+		         1            1            0            0   set_multicycle_path 2 -setup -from [get_pins {U3/sdram.dq[2]}] -to [get_pins {U3/sdram_syn_28.bpad}]
+		         1            1            0            0   set_multicycle_path 2 -setup -from [get_pins {U3/sdram.dq[29]}] -to [get_pins {U3/sdram_syn_29.bpad}]
+		         1            1            0            0   set_multicycle_path 2 -setup -from [get_pins {U3/sdram.dq[7]}] -to [get_pins {U3/sdram_syn_3.bpad}]
+		         1            1            0            0   set_multicycle_path 2 -setup -from [get_pins {U3/sdram.dq[28]}] -to [get_pins {U3/sdram_syn_30.bpad}]
+		         1            1            0            0   set_multicycle_path 2 -setup -from [get_pins {U3/sdram.dq[27]}] -to [get_pins {U3/sdram_syn_31.bpad}]
+		         1            1            0            0   set_multicycle_path 2 -setup -from [get_pins {U3/sdram.dq[26]}] -to [get_pins {U3/sdram_syn_32.bpad}]
+		         1            1            0            0   set_multicycle_path 2 -setup -from [get_pins {U3/sdram.dq[25]}] -to [get_pins {U3/sdram_syn_33.bpad}]
+		         1            1            0            0   set_multicycle_path 2 -setup -from [get_pins {U3/sdram.dq[24]}] -to [get_pins {U3/sdram_syn_34.bpad}]
+		         1            1            0            0   set_multicycle_path 2 -setup -from [get_pins {U3/sdram.dq[3]}] -to [get_pins {U3/sdram_syn_35.bpad}]
+		         1            1            0            0   set_multicycle_path 2 -setup -from [get_pins {U3/sdram.dq[4]}] -to [get_pins {U3/sdram_syn_43.bpad}]
+		         1            1            0            0   set_multicycle_path 2 -setup -from [get_pins {U3/sdram.dq[8]}] -to [get_pins {U3/sdram_syn_47.bpad}]
+		         1            1            0            0   set_multicycle_path 2 -setup -from [get_pins {U3/sdram.dq[9]}] -to [get_pins {U3/sdram_syn_48.bpad}]
+		         1            1            0            0   set_multicycle_path 2 -setup -from [get_pins {U3/sdram.dq[5]}] -to [get_pins {U3/sdram_syn_49.bpad}]
+		         1            1            0            0   set_multicycle_path 2 -setup -from [get_pins {U3/sdram.dq[10]}] -to [get_pins {U3/sdram_syn_50.bpad}]
+		         1            1            0            0   set_multicycle_path 2 -setup -from [get_pins {U3/sdram.dq[11]}] -to [get_pins {U3/sdram_syn_51.bpad}]
+		         1            1            0            0   set_multicycle_path 2 -setup -from [get_pins {U3/sdram.dq[12]}] -to [get_pins {U3/sdram_syn_52.bpad}]
+		         1            1            0            0   set_multicycle_path 2 -setup -from [get_pins {U3/sdram.dq[13]}] -to [get_pins {U3/sdram_syn_53.bpad}]
+		         1            1            0            0   set_multicycle_path 2 -setup -from [get_pins {U3/sdram.dq[14]}] -to [get_pins {U3/sdram_syn_54.bpad}]
+		         1            1            0            0   set_multicycle_path 2 -setup -from [get_pins {U3/sdram.dq[15]}] -to [get_pins {U3/sdram_syn_55.bpad}]
+		         1            1            0            0   set_multicycle_path 2 -setup -from [get_pins {U3/sdram.dq[1]}] -to [get_pins {U3/sdram_syn_7.bpad}]
+		         3            3            0            0   set_max_delay -datapath_only 19.700 -from [get_clocks video_clk] -to [get_clocks clk]
+		        18           18            0            0   set_max_delay -from [get_regs -nowarn {*/primary_addr_gray_reg[*]}] -to [get_regs -nowarn {*/sync_r1[*]}] -datapath_only 7.700
+		        18           18            0            0   set_max_delay -from [get_regs -nowarn {*/primary_addr_gray_reg[*]}] -to [get_regs -nowarn {*/sync_r1[*]}] -datapath_only 7.700
+
+		Min Check
+		--------------------
+		     Total    Dominated     Shadowed      Ignored   Constraint
+		         4            4            0            0   set_multicycle_path 1 -hold  -to [get_pins -hier -regexp {frame_read_write_m0/read_buf/ram_inst/ramread0.*\.wea}]
+
+10. checking no input delay (MEDIUM)
+--------------------------
+There are 22 input ports that with no input delay specified. (MEDIUM)
+
+	HDMI_DDC_SDA
+	I_i2s_BCLK
+	I_i2s_DOUT
+	I_i2s_LRCK
+	ext_key_n[3]
+	ext_key_n[2]
+	ext_key_n[1]
+	ext_key_n[0]
+	key1
+	key2
+	key3
+	light_rc
+	paj_int_n
+	paj_scl
+	paj_sda
+	rst_n
+	sd_miso
+	sw[3]
+	sw[2]
+	sw[1]
+	sw[0]
+	uart_rx
+
+11. checking no output delay (MEDIUM)
+--------------------------
+There are 26 output ports that with no output delay specified. (MEDIUM)
+
+	HDMI_CLK_P
+	HDMI_D0_P
+	HDMI_D1_P
+	HDMI_D2_P
+	HDMI_DDC_SCL
+	HDMI_DDC_SDA
+	light_rc
+	paj_scl
+	paj_sda
+	sd_dclk
+	sd_mosi
+	sd_ncs
+	seg_data[7]
+	seg_data[6]
+	seg_data[5]
+	seg_data[4]
+	seg_data[3]
+	seg_data[2]
+	seg_data[1]
+	seg_data[0]
+	seg_sel[5]
+	seg_sel[4]
+	seg_sel[3]
+	seg_sel[2]
+	seg_sel[1]
+	seg_sel[0]
+
+12. checking partial input delay (MEDIUM)
+--------------------------
+There are 0 input ports with partial input delay specified. (MEDIUM)
+
+
+13. checking partial output delay (MEDIUM)
+--------------------------
+There are 0 output ports with partial output delay specified. (MEDIUM)
+
+
+14. checking abnormal set_input_delay constraints. (MEDIUM)
+---------------------------------------------
+There are 32 abnormal set_input_delay constraints. (MEDIUM)
+
+	 set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[31]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[31]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[31]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[31]} ]
+	 set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[30]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[30]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[30]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[30]} ]
+	 set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[29]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[29]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[29]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[29]} ]
+	 set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[28]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[28]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[28]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[28]} ]
+	 set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[27]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[27]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[27]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[27]} ]
+	 set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[26]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[26]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[26]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[26]} ]
+	 set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[25]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[25]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[25]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[25]} ]
+	 set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[24]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[24]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[24]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[24]} ]
+	 set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[23]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[23]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[23]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[23]} ]
+	 set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[22]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[22]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[22]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[22]} ]
+	 set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[21]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[21]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[21]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[21]} ]
+	 set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[20]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[20]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[20]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[20]} ]
+	 set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[19]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[19]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[19]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[19]} ]
+	 set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[18]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[18]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[18]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[18]} ]
+	 set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[17]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[17]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[17]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[17]} ]
+	 set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[16]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[16]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[16]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[16]} ]
+	 set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[15]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[15]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[15]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[15]} ]
+	 set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[14]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[14]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[14]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[14]} ]
+	 set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[13]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[13]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[13]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[13]} ]
+	 set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[12]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[12]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[12]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[12]} ]
+	 set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[11]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[11]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[11]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[11]} ]
+	 set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[10]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[10]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[10]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[10]} ]
+	 set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[9]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[9]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[9]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[9]} ]
+	 set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[8]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[8]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[8]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[8]} ]
+	 set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[7]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[7]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[7]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[7]} ]
+	 set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[6]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[6]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[6]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[6]} ]
+	 set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[5]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[5]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[5]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[5]} ]
+	 set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[4]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[4]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[4]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[4]} ]
+	 set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[3]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[3]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[3]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[3]} ]
+	 set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[2]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[2]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[2]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[2]} ]
+	 set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[1]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[1]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[1]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[1]} ]
+	 set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -max 5.000 [ get_pins {U3/sdram.dq[0]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -fast -min 1.000 [ get_pins {U3/sdram.dq[0]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -max 5.000 [ get_pins {U3/sdram.dq[0]} ]
+ set_input_delay -clock [ get_clocks {ext_mem_clk_sft} ] -reference_pin [ get_pins {U3/sdram.clk} ] -slow -min 1.000 [ get_pins {U3/sdram.dq[0]} ]
+

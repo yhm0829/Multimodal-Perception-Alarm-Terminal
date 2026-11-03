@@ -1,0 +1,29 @@
+{
+  "project": "HX21A5_ROI_GUI_FIXED_20261102",
+  "summary_date": "2026-11-02",
+  "bitstream": {
+    "path": "HX21A5_ROI_20261102.bit",
+    "sha256": "CBAFE4EE7E192BA01726F67994E765649818EBBAEE6D3AD53894022C19A56004",
+    "status": "final_and_programmed"
+  },
+  "resources": {
+    "LUT": { "used": 16844, "total": 19600, "utilization_percent": 85.94 },
+    "REG": { "used": 7863, "total": 19600, "utilization_percent": 40.12 },
+    "BRAM9K": { "used": 20, "total": 64, "utilization_percent": 31.25 },
+    "BRAM32K": { "used": 12, "total": 16, "utilization_percent": 75.00 },
+    "DSP": { "used": 11, "total": 29, "utilization_percent": 37.93 },
+    "PLL": { "used": 4, "total": 4, "utilization_percent": 100.00 }
+  },
+  "timing_ns": {
+    "setup_wns": 0.103,
+    "setup_tns": 0.000,
+    "hold_wns": 0.020,
+    "hold_tns": 0.000,
+    "period_check_wns": 35.600
+  },
+  "authoritative_reports": [
+    "resource.rpt",
+    "timing.rpt",
+    "timing_check.rpt"
+  ]
+}

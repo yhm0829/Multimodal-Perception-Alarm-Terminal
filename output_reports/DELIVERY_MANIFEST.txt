@@ -1,0 +1,117 @@
+﻿HX21A5 ROI GUI 最终交付清单
+生成日期：2026-11-02
+说明：本清单逐项列出最终交付中保留的每个文件及用途。
+
+build_summary.json	最终位流、资源和时序数据的机器可读汇总
+DELIVERY_MANIFEST.txt	全部交付文件及用途清单
+fpga\td_project\al_ip\font_resource.mif	工程字体、标志或FFT系数初始化数据
+fpga\td_project\al_ip\logo_resource.mif	工程字体、标志或FFT系数初始化数据
+fpga\td_project\al_ip\mm_twiddle_1024.mif	工程字体、标志或FFT系数初始化数据
+fpga\td_project\build_final.tcl	最终完整构建、位流与报告导出脚本
+fpga\td_project\closure\NativeFlow.tcl	TD原生流程准备与时序收敛脚本
+fpga\td_project\closure\prepare_io_body.tcl	TD原生流程准备与时序收敛脚本
+fpga\td_project\HX21A5_Runs\phy_1\HX21A5.tcl	TD直接运行所需的自定义综合或物理实现流程脚本
+fpga\td_project\HX21A5_Runs\syn_1\HX21A5.tcl	TD直接运行所需的自定义综合或物理实现流程脚本
+fpga\td_project\HX21A5.al	TD工程入口文件
+fpga\td_project\mapped_reset_sync_pair_audited.tcl	时序收敛辅助脚本
+fpga\td_project\phase1_complete_timing.sdc	时序收敛辅助约束
+fpga\td_project\read_cycle_pairs.sdc	时序收敛辅助约束
+fpga\user_source\constraints_source\alarm_io.sdc	FPGA时序与设计约束
+fpga\user_source\constraints_source\pin.adc	FPGA管脚约束
+fpga\user_source\constraints_source\reset_sync.sdc	FPGA时序与设计约束
+fpga\user_source\constraints_source\timing.sdc	FPGA时序与设计约束
+fpga\user_source\hdl_source\audio_alarm_detect.v	工程RTL源代码
+fpga\user_source\hdl_source\audio_arc_calculate.v	工程RTL源代码
+fpga\user_source\hdl_source\frame_fifo_write_timing_opt.v	工程RTL源代码
+fpga\user_source\hdl_source\hdmi_phy_warpper.v	工程RTL源代码
+fpga\user_source\hdl_source\hdmi1.4b_transmitter_core\hdmi_1_4b_transmitter_core_wrapper.enc.v	加密第三方或开发板参考HDL模块
+fpga\user_source\hdl_source\I2S_receiver.v	工程RTL源代码
+fpga\user_source\hdl_source\include\global_def.v	工程RTL源代码
+fpga\user_source\hdl_source\include\sdr_as_ram.enc.v	加密第三方或开发板参考HDL模块
+fpga\user_source\hdl_source\include\sdr_init_ref.enc.v	加密第三方或开发板参考HDL模块
+fpga\user_source\hdl_source\include\sdr_wrrd.enc.v	加密第三方或开发板参考HDL模块
+fpga\user_source\hdl_source\IP\afifo_16_256_sim.v	TD IP核HDL封装或仿真模型
+fpga\user_source\hdl_source\IP\afifo_16_256.tcl	TD IP核配置与生成脚本
+fpga\user_source\hdl_source\IP\afifo_16_256.v	TD IP核HDL封装或仿真模型
+fpga\user_source\hdl_source\IP\afifo_16_256.vhd	TD IP核HDL封装或仿真模型
+fpga\user_source\hdl_source\IP\afifo_16_32_256.ipc	TD IP核配置与生成脚本
+fpga\user_source\hdl_source\IP\afifo_16_32_256.tcl	TD IP核配置与生成脚本
+fpga\user_source\hdl_source\IP\afifo_16_32_256.v	TD IP核HDL封装或仿真模型
+fpga\user_source\hdl_source\IP\afifo_32_16_256.ipc	TD IP核配置与生成脚本
+fpga\user_source\hdl_source\IP\afifo_32_16_256.tcl	TD IP核配置与生成脚本
+fpga\user_source\hdl_source\IP\afifo_32_16_256.v	TD IP核HDL封装或仿真模型
+fpga\user_source\hdl_source\IP\sdram.ipc	TD IP核配置与生成脚本
+fpga\user_source\hdl_source\IP\sdram.v	TD IP核HDL封装或仿真模型
+fpga\user_source\hdl_source\IP\sdram.vhd	TD IP核HDL封装或仿真模型
+fpga\user_source\hdl_source\IP\sys_pll.ipc	TD IP核配置与生成脚本
+fpga\user_source\hdl_source\IP\sys_pll.v	TD IP核HDL封装或仿真模型
+fpga\user_source\hdl_source\IP\sys_pll.vhd	TD IP核HDL封装或仿真模型
+fpga\user_source\hdl_source\IP\video_pll.ipc	TD IP核配置与生成脚本
+fpga\user_source\hdl_source\IP\video_pll.v	TD IP核HDL封装或仿真模型
+fpga\user_source\hdl_source\IP\video_pll.vhd	TD IP核HDL封装或仿真模型
+fpga\user_source\hdl_source\lane_lvds_10_1.v	工程RTL源代码
+fpga\user_source\hdl_source\logo_128x96.rom	显示字体或图形只读存储初始化数据
+fpga\user_source\hdl_source\mm_alarm_control.v	工程RTL源代码
+fpga\user_source\hdl_source\mm_alarm_glyphs.v	工程RTL源代码
+fpga\user_source\hdl_source\mm_alarm_locator.v	工程RTL源代码
+fpga\user_source\hdl_source\mm_alarm_tone.v	工程RTL源代码
+fpga\user_source\hdl_source\mm_alarm_uart.v	工程RTL源代码
+fpga\user_source\hdl_source\mm_audio_display_source.v	工程RTL源代码
+fpga\user_source\hdl_source\mm_audio_source.v	工程RTL源代码
+fpga\user_source\hdl_source\mm_audio_spectrum_1024.v	工程RTL源代码
+fpga\user_source\hdl_source\mm_dac_output.v	工程RTL源代码
+fpga\user_source\hdl_source\mm_ext_control.v	工程RTL源代码
+fpga\user_source\hdl_source\mm_fire_spectrum.v	工程RTL源代码
+fpga\user_source\hdl_source\mm_flash_alarm.v	工程RTL源代码
+fpga\user_source\hdl_source\mm_font16_rom.v	工程RTL源代码
+fpga\user_source\hdl_source\mm_gesture_key_bridge.v	工程RTL源代码
+fpga\user_source\hdl_source\mm_i2c_reg_master.v	工程RTL源代码
+fpga\user_source\hdl_source\mm_ldr_rc_sensor.v	工程RTL源代码
+fpga\user_source\hdl_source\mm_logo_rom.v	工程RTL源代码
+fpga\user_source\hdl_source\mm_paj7620_controller.v	工程RTL源代码
+fpga\user_source\hdl_source\mm_panel_control.v	工程RTL源代码
+fpga\user_source\hdl_source\mm_pcm_clock.v	工程RTL源代码
+fpga\user_source\hdl_source\mm_sdram_pixel_fetch.v	工程RTL源代码
+fpga\user_source\hdl_source\mm_sdram_refresh_scheduler.v	工程RTL源代码
+fpga\user_source\hdl_source\mm_uart_rx.v	工程RTL源代码
+fpga\user_source\hdl_source\mm_video_extensions.v	工程RTL源代码
+fpga\user_source\hdl_source\mm_volume_peak.v	工程RTL源代码
+fpga\user_source\hdl_source\osd_font16.rom	显示字体或图形只读存储初始化数据
+fpga\user_source\hdl_source\rom\i2s_rom_player_single_pll_fix64_rom_ip.v	工程RTL源代码
+fpga\user_source\hdl_source\SD\ax_debounce.v	工程RTL源代码
+fpga\user_source\hdl_source\SD\bmp_read.v	工程RTL源代码
+fpga\user_source\hdl_source\SD\color_bar.v	工程RTL源代码
+fpga\user_source\hdl_source\SD\frame_fifo_read.v	工程RTL源代码
+fpga\user_source\hdl_source\SD\frame_fifo_write.v	工程RTL源代码
+fpga\user_source\hdl_source\SD\frame_read_write.v	工程RTL源代码
+fpga\user_source\hdl_source\SD\sd_card_bmp.v	工程RTL源代码
+fpga\user_source\hdl_source\SD\sd_card_cmd.v	工程RTL源代码
+fpga\user_source\hdl_source\SD\sd_card_sec_read_write.v	工程RTL源代码
+fpga\user_source\hdl_source\SD\sd_card_top.v	工程RTL源代码
+fpga\user_source\hdl_source\SD\sdram.v	工程RTL源代码
+fpga\user_source\hdl_source\SD\seg_decoder.v	工程RTL源代码
+fpga\user_source\hdl_source\SD\seg_scan.v	工程RTL源代码
+fpga\user_source\hdl_source\SD\spi_master.v	工程RTL源代码
+fpga\user_source\hdl_source\SD\video_define.v	工程RTL源代码
+fpga\user_source\hdl_source\SD\video_delay.v	工程RTL源代码
+fpga\user_source\hdl_source\SD\video_timing_data.v	工程RTL源代码
+fpga\user_source\hdl_source\startup_pulse.v	工程RTL源代码
+fpga\user_source\hdl_source\test\design_top_i2s_test_pll.v	板级音频测试参考源码
+fpga\user_source\hdl_source\test\i2s_test_tone_gen_pll.v	板级音频测试参考源码
+fpga\user_source\hdl_source\top_tf_hdmi_audio.v	工程RTL源代码
+fpga\user_source\hdl_source\video_rgb_to_axis_640x480.v	工程RTL源代码
+fpga\user_source\ip_source\pll.ipc	工程PLL IP配置与HDL封装
+fpga\user_source\ip_source\pll.v	工程PLL IP配置与HDL封装
+fpga\user_source\ip_source\pll.vhd	工程PLL IP配置与HDL封装
+HX21A5_ROI_20261102.bit	唯一推荐下载的最终位流
+README.md	交付入口、最终数据、打开方法和使用边界
+resource.rpt	最终资源利用率报告
+ROI_Guide.md	ROI九宫格平移与交互操作说明
+SHA256.csv	交付文件SHA256校验清单（不含清单自身）
+timing_check.rpt	最终时序检查报告
+timing.rpt	最终时序分析报告
+THIRD_PARTY_LICENSE.txt	PAJ7620U2公开寄存器初始化序列的第三方许可说明
+verification\simulation_validation_record.md	仿真与实现验证整理记录
+verification\tb_roi_keys.v	ROI功能仿真测试平台源码
+verification\tb_roi_reader.v	ROI功能仿真测试平台源码
+verification\tb_roi.v	ROI功能仿真测试平台源码
